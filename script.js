@@ -1,5 +1,4 @@
-// ==== Todo CRUD Management ====
-
+// === Todo CRUD Management ===
 // Array to store todos
 let todos = [];
 
@@ -15,10 +14,10 @@ function renderTodos() {
     const li = document.createElement("li");
     li.className = "todo-item";
     li.innerHTML = `
-            <span>${todo}</span>
-            <button onclick="editTodo(${index})">Edit</button>
-            <button onclick="deleteTodo(${index})">Delete</button>
-        `;
+    <span>${todo}</span>
+    <button onClick="editTodo(${index})">Edit</button>
+    <button onClick="deleteTodo(${index})">Delete</button>
+    `;
     todoList.appendChild(li);
   });
 }
